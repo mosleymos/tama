@@ -1,0 +1,25 @@
+<h1>Listing tamas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tamas.each do |tama| %>
+      <tr>
+        <td><%= link_to 'Show', tama %></td>
+        <td><%= link_to 'Edit', edit_tama_path(tama) %></td>
+        <td><%= link_to 'Destroy', tama, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tama', new_tama_path %>
