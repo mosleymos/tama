@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-TamaApp::Application.config.secret_key_base = '4faec4e747e07d24d5a19faa655c904d6d537ba9bbdbb7d86411dfc9c69180f5678a4de67bdbdb8003516a41b783a1e7d1247cfba33be8009aaabcf794c44340'
+TamaApp::Application.config.secret_key_base = '43078cc18bd1c15a570a03aff054f2997034fd1cefb8c9f41abd66d1717deac44335e77adda2fe485808d2286e29a6e3e73c479f836c9d6103e0ce001d30336c'

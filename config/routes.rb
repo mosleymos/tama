@@ -1,7 +1,9 @@
 TamaApp::Application.routes.draw do
-  resources :tamas
-
+  get "tama/main"
+  get "tama/creation_tama"
+  get "tama/quit_tama"
   # The priority is based upon order of creation: first created -> highest priority.
+root 'gestion_pages#EntreeSite'
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
