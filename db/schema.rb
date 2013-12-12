@@ -11,9 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131211123040) do
+ActiveRecord::Schema.define(version: 20131212114049) do
 
   create_table "tamas", force: true do |t|
+    t.string   "name"
+    t.integer  "health"
+    t.integer  "mentalState"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

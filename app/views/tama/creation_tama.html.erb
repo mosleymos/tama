@@ -1,1 +1,7 @@
 <h1>Page de creation du Tama</h1>
+
+<%= form_tag("/tama/main", method: "get") do %>
+  <%= label_tag(:tamaName, "NomTama:") %>
+  <%= text_field_tag(:tamaName) %>
+  <%= submit_tag("Submit") %>
+<% end %>
