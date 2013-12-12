@@ -1,13 +1,26 @@
 class TamaController < ApplicationController
   def main
-    @tama = Tama.new 
+    @tama = Tama.new(:name => params[:tamaName], :health => 100, :mentalState => 100, :BirthDate => DateTime.now) 
     @tama.to_s
-#render :partial => 'tama', :object => @tama
-#ajax a creuser
-#redirect_to action: 'main' cause une erreur car redirection en boucle infinie
   end
 
   def creation_tama
+  end
+
+  def feed_tama
+    @tama.health +=10
+  end
+
+  def cure_tama
+    @tama.health +=20
+    @tama.mentalState +=20
+  end
+
+  def clean_tama
+    @tama.health +=30
+  end
+
+  def play_with_tama
   end
 
   def quit_tama

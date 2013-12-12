@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20131212114049) do
     t.string   "name"
     t.integer  "health"
     t.integer  "mentalState"
+    t.string   "BirthDate"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -4,8 +4,9 @@ class CreateTamas < ActiveRecord::Migration
       t.string :name
       t.integer :health
       t.integer :mentalState
+      t.string :BirthDate
 
-      t.timestamps
+      t.timestamps 
     end
   end
 end
