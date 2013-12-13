@@ -5,6 +5,7 @@ root 'gestion_pages#EntreeSite'
 
 #Routes sur lesquels je travaille et qui me semble correct a corriger pour amelioration
   get "tama/main"
+  patch 'tama/main'
   get "tama/creation_tama"
   get "tama/quit_tama"
 
