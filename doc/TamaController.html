@@ -189,7 +189,7 @@
 
         <div class="method-description">
           
-          
+          <p>Action nettoyer le tama</p>
           
 
           
@@ -219,7 +219,7 @@
 
         <div class="method-description">
           
-          
+          <p>Action qui envoie a la page de creation du tama</p>
           
 
           
@@ -249,7 +249,7 @@
 
         <div class="method-description">
           
-          
+          <p>Action soigner le tama</p>
           
 
           
@@ -280,7 +280,7 @@
 
         <div class="method-description">
           
-          
+          <p>Action nourrir le tama</p>
           
 
           
@@ -310,14 +310,13 @@
 
         <div class="method-description">
           
-          
+          <p>Action principale du tama</p>
           
 
           
           <div class="method-source-code" id="main-source">
-            <pre><span class="ruby-comment"># File app/controllers/tama_controller.rb, line 2</span>
+            <pre><span class="ruby-comment"># File app/controllers/tama_controller.rb, line 3</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">main</span>
-  
   <span class="ruby-ivar">@tama</span> = <span class="ruby-constant">Tama</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:tamaName</span>], <span class="ruby-value">:health</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">100</span>, <span class="ruby-value">:mentalState</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">100</span>, <span class="ruby-value">:BirthDate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">DateTime</span>.<span class="ruby-identifier">now</span>) 
   <span class="ruby-ivar">@tama</span>.<span class="ruby-identifier">save</span>
   <span class="ruby-ivar">@tama</span>.<span class="ruby-identifier">to_s</span>
@@ -344,7 +343,7 @@
 
         <div class="method-description">
           
-          
+          <p>Actuib jouer avec le tama</p>
           
 
           
@@ -374,7 +373,7 @@
 
         <div class="method-description">
           
-          
+          <p>Action de quitter le jeu tama</p>
           
 
           

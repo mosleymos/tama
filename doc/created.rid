@@ -1,4 +1,4 @@
-Fri, 13 Dec 2013 14:35:22 +0100
+Fri, 13 Dec 2013 14:52:32 +0100
 ./Gemfile	Fri, 13 Dec 2013 12:25:56 +0100
 ./README.rdoc	Wed, 11 Dec 2013 13:30:12 +0100
 ./public/robots.txt	Wed, 11 Dec 2013 13:30:12 +0100
@@ -23,7 +23,7 @@ Fri, 13 Dec 2013 14:35:22 +0100
 ./app/helpers/application_helper.rb	Wed, 11 Dec 2013 13:30:12 +0100
 ./app/helpers/gestion_pages_helper.rb	Thu, 12 Dec 2013 10:27:51 +0100
 ./app/helpers/tama_helper.rb	Thu, 12 Dec 2013 10:27:51 +0100
-./app/controllers/tama_controller.rb	Fri, 13 Dec 2013 10:59:46 +0100
+./app/controllers/tama_controller.rb	Fri, 13 Dec 2013 14:48:07 +0100
 ./app/controllers/gestion_pages_controller.rb	Thu, 12 Dec 2013 10:27:51 +0100
 ./app/controllers/application_controller.rb	Wed, 11 Dec 2013 13:30:12 +0100
 ./tmp/cache/assets/development/sprockets/d145186fe95358c883958bfa8e800ff7	Wed, 11 Dec 2013 16:15:50 +0100
