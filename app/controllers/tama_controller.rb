@@ -1,10 +1,14 @@
 class TamaController < ApplicationController
   def main
+    
     @tama = Tama.new(:name => params[:tamaName], :health => 100, :mentalState => 100, :BirthDate => DateTime.now) 
+    @tama.save
     @tama.to_s
+
   end
 
   def creation_tama
+    
   end
 
   def feed_tama
