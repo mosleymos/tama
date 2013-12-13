@@ -27,6 +27,9 @@ gem 'turbolinks'
 #Use of the gem better_errors which help to view in a better way ruby on rails errors
 gem 'better_errors'
 
+#Using the gem pjax wich allows to use ajax simply and refresh a page without action. Please.
+gem 'pjax_rails'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 

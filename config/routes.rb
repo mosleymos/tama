@@ -2,9 +2,14 @@ TamaApp::Application.routes.draw do
 
   # The priority is based upon order of creation: first created -> highest priority.
 root 'gestion_pages#EntreeSite'
+
+#Routes sur lesquels je travaille et qui me semble correct a corriger pour amelioration
   get "tama/main"
   get "tama/creation_tama"
   get "tama/quit_tama"
+
+#Personnal routes
+
 #  patch "tama/main"  via: "tama/main/feed_tama"
   # See how all your routes lay out with "rake routes".
 

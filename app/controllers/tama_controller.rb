@@ -25,6 +25,7 @@ class TamaController < ApplicationController
   end
 
   def play_with_tama
+    @tama.mentalState +=50
   end
 
   def quit_tama
