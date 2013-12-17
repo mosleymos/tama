@@ -1,6 +1,5 @@
 TamaApp::Application.routes.draw do
-  resources :tamas
-
+root 'tama#main'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
