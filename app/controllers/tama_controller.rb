@@ -1,28 +1,42 @@
 class TamaController < ApplicationController
+#Action principale du tama
   def main
     @tama = Tama.new(:name => params[:tamaName], :health => 100, :mentalState => 100, :BirthDate => DateTime.now) 
+    @tama.save
     @tama.to_s
-  end
 
+  end
+#Action qui envoie a la page de creation du tama
   def creation_tama
+    
   end
-
+#Action nourrir le tama
   def feed_tama
-    @tama.health +=10
+#@tama.modifState(15,50) <= Probleme
   end
-
+#Action soigner le tama
   def cure_tama
-    @tama.health +=20
-    @tama.mentalState +=20
-  end
 
+#  @tama.health +=20
+#  @tama.mentalState +=20
+#  Code a probleme
+ 
+  end
+#Action nettoyer le tama
   def clean_tama
-    @tama.health +=30
+ 
+# @tama.health +=30
+# Code a probleme
+ 
   end
-
+#Actuib jouer avec le tama
   def play_with_tama
-  end
+ 
+#   @tama.mentalState +=50
+#   Code a probleme
 
+  end
+#Action de quitter le jeu tama
   def quit_tama
   end
 end

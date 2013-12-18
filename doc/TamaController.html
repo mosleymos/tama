@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class TamaController - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/controllers/tama_controller.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="ApplicationController.html">ApplicationController</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-clean_tama">#clean_tama</a>
+    
+    <li><a href="#method-i-creation_tama">#creation_tama</a>
+    
+    <li><a href="#method-i-cure_tama">#cure_tama</a>
+    
+    <li><a href="#method-i-feed_tama">#feed_tama</a>
+    
+    <li><a href="#method-i-main">#main</a>
+    
+    <li><a href="#method-i-play_with_tama">#play_with_tama</a>
+    
+    <li><a href="#method-i-quit_tama">#quit_tama</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="./README_rdoc.html">README</a>
+  
+    <li class="file"><a href="./Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="./public/robots_txt.html">robots</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./ActiveSupport.html">ActiveSupport</a>
+  
+    <li><a href="./ActiveSupport/TestCase.html">ActiveSupport::TestCase</a>
+  
+    <li><a href="./TamaApp.html">TamaApp</a>
+  
+    <li><a href="./TamaApp/Application.html">TamaApp::Application</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./CreateTamas.html">CreateTamas</a>
+  
+    <li><a href="./GestionPagesController.html">GestionPagesController</a>
+  
+    <li><a href="./GestionPagesControllerTest.html">GestionPagesControllerTest</a>
+  
+    <li><a href="./GestionPagesHelper.html">GestionPagesHelper</a>
+  
+    <li><a href="./GestionPagesHelperTest.html">GestionPagesHelperTest</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./Tama.html">Tama</a>
+  
+    <li><a href="./TamaController.html">TamaController</a>
+  
+    <li><a href="./TamaControllerTest.html">TamaControllerTest</a>
+  
+    <li><a href="./TamaHelper.html">TamaHelper</a>
+  
+    <li><a href="./TamaHelperTest.html">TamaHelperTest</a>
+  
+    <li><a href="./TamaTest.html">TamaTest</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class TamaController</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-clean_tama" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">clean_tama</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Action nettoyer le tama</p>
+          
+
+          
+          <div class="method-source-code" id="clean_tama-source">
+            <pre><span class="ruby-comment"># File app/controllers/tama_controller.rb, line 23</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">clean_tama</span>
+  <span class="ruby-ivar">@tama</span>.<span class="ruby-identifier">health</span> <span class="ruby-operator">+=</span><span class="ruby-value">30</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- clean_tama-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- clean_tama-method -->
+
+    
+      <div id="method-i-creation_tama" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">creation_tama</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Action qui envoie a la page de creation du tama</p>
+          
+
+          
+          <div class="method-source-code" id="creation_tama-source">
+            <pre><span class="ruby-comment"># File app/controllers/tama_controller.rb, line 10</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">creation_tama</span>
+  
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- creation_tama-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- creation_tama-method -->
+
+    
+      <div id="method-i-cure_tama" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">cure_tama</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Action soigner le tama</p>
+          
+
+          
+          <div class="method-source-code" id="cure_tama-source">
+            <pre><span class="ruby-comment"># File app/controllers/tama_controller.rb, line 18</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">cure_tama</span>
+  <span class="ruby-ivar">@tama</span>.<span class="ruby-identifier">health</span> <span class="ruby-operator">+=</span><span class="ruby-value">20</span>
+  <span class="ruby-ivar">@tama</span>.<span class="ruby-identifier">mentalState</span> <span class="ruby-operator">+=</span><span class="ruby-value">20</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- cure_tama-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- cure_tama-method -->
+
+    
+      <div id="method-i-feed_tama" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">feed_tama</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Action nourrir le tama</p>
+          
+
+          
+          <div class="method-source-code" id="feed_tama-source">
+            <pre><span class="ruby-comment"># File app/controllers/tama_controller.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">feed_tama</span>
+  <span class="ruby-ivar">@tama</span>.<span class="ruby-identifier">health</span> <span class="ruby-operator">+=</span><span class="ruby-value">10</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- feed_tama-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- feed_tama-method -->
+
+    
+      <div id="method-i-main" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">main</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Action principale du tama</p>
+          
+
+          
+          <div class="method-source-code" id="main-source">
+            <pre><span class="ruby-comment"># File app/controllers/tama_controller.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">main</span>
+  <span class="ruby-ivar">@tama</span> = <span class="ruby-constant">Tama</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:tamaName</span>], <span class="ruby-value">:health</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">100</span>, <span class="ruby-value">:mentalState</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">100</span>, <span class="ruby-value">:BirthDate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">DateTime</span>.<span class="ruby-identifier">now</span>) 
+  <span class="ruby-ivar">@tama</span>.<span class="ruby-identifier">save</span>
+  <span class="ruby-ivar">@tama</span>.<span class="ruby-identifier">to_s</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- main-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- main-method -->
+
+    
+      <div id="method-i-play_with_tama" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">play_with_tama</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Actuib jouer avec le tama</p>
+          
+
+          
+          <div class="method-source-code" id="play_with_tama-source">
+            <pre><span class="ruby-comment"># File app/controllers/tama_controller.rb, line 27</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">play_with_tama</span>
+  <span class="ruby-ivar">@tama</span>.<span class="ruby-identifier">mentalState</span> <span class="ruby-operator">+=</span><span class="ruby-value">50</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- play_with_tama-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- play_with_tama-method -->
+
+    
+      <div id="method-i-quit_tama" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">quit_tama</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Action de quitter le jeu tama</p>
+          
+
+          
+          <div class="method-source-code" id="quit_tama-source">
+            <pre><span class="ruby-comment"># File app/controllers/tama_controller.rb, line 31</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">quit_tama</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- quit_tama-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- quit_tama-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

@@ -1,14 +1,20 @@
 <h1> Main du programme principal le tama fonctionne ici </h1>
 
-<p> <%= render partial: 'tamawindow', class: 'ajax' %> </p>
+
+<!-- Rendu partiel des etats du tamagotchi -->
+
+<p> <%= render partial: 'tamawindow' %> </p>
+
+<!-- Bouton du tamagotchi et actions correspondantes -->
 
 <ul>
-    <li>NourrirTama</li>
+    <li><%= link_to 'NourrirTama', :controller => "tama" , :action => "feed_tama" %>  </li>
     
-    <li>SoignerTama</li>
+    <li><%= link_to 'SoignerTama', :controller => "tama", :action => "cure_tama" %></li>
     
-    <li>NettoyerTama</li>
+    <li><%= link_to 'NettoyerTama', :controller => "tama" , :action => "clean_tama" %></li>
     
-    <li>JouerTama</li>
+    <li><%= link_to 'JouerTama', :controller => "tama" , :action => "play_with_tama"
+    %></li>
     
 </ul>
