@@ -1,9 +1,19 @@
+load "constant.rb"
+load "display.rb"
+require "date"
+
 class Tama
 
-@name
-@Date_of_birth
-@health
-@mental_state
+include Display
+
+
+def initialize(nom)
+    @name=nom
+    @Date_of_Birth=DateTime.now
+    @health=$HEALTH_TAMA
+    @mental_state=$MENTAL_TAMA
+
+end
 
 
 def feed_tama
