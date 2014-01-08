@@ -1,6 +1,7 @@
 load "tama.rb"
 load "display.rb"
 
+
 #Ecrand de bienvenue 
 include Display
 
@@ -20,5 +21,17 @@ puts "#{nomTama}"
 
 tama=Tama.new(nomTama)
 tama.tama_stats(tama) #affichage des stats du tama
+
+#Boucle principale du programme Tama
+#Boucle de la vie
+
+time_to_live = $TIME_OF_LIFE
+while time_to_live !=0
+
+puts time_to_live
+time_to_live -=1
+
+end
+
 
 
