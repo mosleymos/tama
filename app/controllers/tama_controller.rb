@@ -1,12 +1,12 @@
 class TamaController < ApplicationController
-  def main
-    @tama = DateTime.now
-    @tama.to_s
-  end
 
-  def creation_tama
-  end
+    def index
+    end
 
-  def quit_tama
-  end
+    def new
+    end
+
+    def main
+    end
+    
 end

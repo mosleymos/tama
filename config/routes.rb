@@ -1,6 +1,10 @@
 TamaApp::Application.routes.draw do
-  resources :tamas
 
+root "tama#index"
+
+  get "tama/main" => "tama#main"
+  post "tama/main"=> "tama#main"
+  post "tama/new" => "tama#new"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
