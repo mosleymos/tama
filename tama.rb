@@ -1,40 +1,47 @@
 load "constant.rb"
-load "display.rb"
 require "date"
 
 class Tama
 
-include Display
 
+attr_accessor :name
+attr_reader :health, :mental_state, :Date_of_Birth, :state
 
-def initialize(nom)
-    @name=nom
-    @Date_of_Birth=DateTime.now
-    @health=$HEALTH_TAMA
-    @mental_state=$MENTAL_TAMA
+#Constructeur principal
+    def initialize(nom)
+	@name=nom
+	@Date_of_Birth=DateTime.now
+	@health=$HEALTH_TAMA
+	mental_state=$MENTAL_TAMA
+	@state=$STATE_OF_LIFE[0]
 
-end
+    end
 
+#Nourrir le tama
+    def feed_tama
+	@health += 30
+    end 
 
-def feed_tama
+#Eduquer le tama
+    def teach_tama
+	@mental_state +=10
+    end 
 
-end 
+#Jouer avec le tama    
+    def play_with_tama
+	@mental_state +=50
+    end 
 
-def teach_tama
+#Soigner le tama
+    def cure_tama
+	@mental_state +=50
+    end 
 
-end 
-
-def play_with_tama
-
-end 
-
-def cure_tama
-
-end 
-
-def clean_tama
-
-end 
+#Nettoyer le tama
+    def clean_tama
+	@mental_state +=30
+	@health +=50
+    end 
 
 
 end 
