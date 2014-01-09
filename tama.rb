@@ -11,8 +11,8 @@ attr_reader :health, :mental_state, :Date_of_Birth, :state
     def initialize(nom)
 	@name=nom
 	@Date_of_Birth=DateTime.now
-	@health=$HEALTH_TAMA
-	mental_state=$MENTAL_TAMA
+	@health=100
+	@mental_state=100
 	@state=$STATE_OF_LIFE[0]
 
     end
