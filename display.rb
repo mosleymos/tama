@@ -34,8 +34,21 @@ module Display
     end
 
     def entree_utilisateur
-	prompt=":>"
-	input=STDIN.get.chomp
+	prompt=">"
+	input=gets
 	return input
+    end
+
+    def tama_actions
+	banner_tama
+	puts "Veuillez choisir une action sur votre tama pour son bien"
+	puts "Entrez votre choix par le nombre pour l'action"
+	puts "Entrez 0 \t Nourrir votre tama"
+	puts "Entrez 1 \t Eduquer votre tama"
+	puts "Entrez 2 \t Jouer avec votre tama"
+	puts "Entrez 3 \t Soigner votre tama"
+	puts "Entrez 4 \t Nettoyer votre tama"
+
+	
     end
 end
