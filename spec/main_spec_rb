@@ -1,0 +1,4 @@
+it "should include module display" do 
+    it "should include module player_actions" do 
+    end
+end
