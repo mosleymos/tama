@@ -1,5 +1,6 @@
 load "constant.rb"
 require "date"
+require "chronic"
 
 class Tama
 
@@ -10,7 +11,7 @@ attr_reader :health, :mental_state, :Date_of_Birth, :state
 #Constructeur principal
     def initialize(nom)
 	@name=nom
-	@Date_of_Birth=DateTime.now
+	@Date_of_Birth=Chronic.parse("now")
 	@health=100
 	@mental_state=100
 	@state=$STATE_OF_LIFE[0]
