@@ -1,6 +1,8 @@
 load "tama.rb"
 load "display.rb"
-load "player_actions.rb"
+load "game_rules.rb"
+
+require "chronic"
 
 #Ecrand de bienvenue 
 include Display
@@ -28,10 +30,21 @@ tama.tama_stats(tama) #affichage des stats du tama
 #Elle se termine lorsque time_to_live=0
 
 time_to_live = $TIME_OF_LIFE
-while  time_to_live != 0
+
+real_time=Chronic.parse("now")
+time_to_die=real_time
+time_to_die=Chronic.parse("120 seconds from now")
+
+#binding.pry
+
+#Risque de boucle infinie le tama dure 120s
+
+while  (Chronic.parse("now") <=> time_to_die) == -1
 puts banner_tama
 
-puts"Il lui reste#{time_to_live} round a vivre"
+#binding.pry
+
+puts"Il lui reste#{real_time} round a vivre"
 puts banner_tama
 tama.tama_stats(tama)
 time_to_live -=1
@@ -64,6 +77,8 @@ playerChoice_act_tama(tama,choice_player)
 	puts"je  ne vous comprend pas"
     end
 =end
+
+sleep 2.5
 
 end
 
