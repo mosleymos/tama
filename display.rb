@@ -28,6 +28,10 @@ module Display
 	
     end
 
+    def banner_tama_simple
+	puts"***"
+    end
+
     def banner_tama
 	puts "******************************"
 	puts "******************************"
