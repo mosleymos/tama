@@ -31,12 +31,13 @@ module PlayerActions
 end
 module EventTama
 
-    def NatureRandom
+    def natureRandom
+	#eventRandom est une variable aleatoire de la nature
 	eventRandom = rand(1..10).to_i
 	return eventRandom
     end
 
-    def NatureEventSpecific(eventRandom)
-
+    def natureEventSpecific(eventRandom)
+	puts " Votre tama est:" 
     end
 end
