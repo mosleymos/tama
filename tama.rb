@@ -6,15 +6,16 @@ class Tama
 
 
 attr_accessor :name
-attr_reader :health, :mental_state, :Date_of_Birth, :state
+attr_reader :health, :mental_state, :Date_of_Birth, :state, :mood
 
 #Constructeur principal
     def initialize(nom)
 	@name=nom
 	@Date_of_Birth=Chronic.parse("now")
-	@health=100
-	@mental_state=100
+	@health=$HEALTH_TAMA
+	@mental_state=$MENTAL_TAMA
 	@state=$STATE_OF_LIFE[0]
+	@mood=$MOOD[3]
 
     end
 

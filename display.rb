@@ -24,13 +24,17 @@ module Display
 	puts"Pdv: \t #{tama.health}"
 	puts"Men: \t #{tama.mental_state}"
 	puts"Sta: \t #{tama.state}"
+	puts"moo: \t #{tama.mood}"
 	banner_tama
 	
     end
 
     def banner_tama
-	15.times{print"-"}
-	print'\n'
+	15.times{
+	    print"-"
+	}
+	
+	puts"\n"
     end
 
     def entree_utilisateur

@@ -14,3 +14,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+#ignore particular files so we have
+*display.rb.swp
+*.main.rb.swp
+*.constant.rb.swp
+*.tama.rb.swp

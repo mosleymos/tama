@@ -3,6 +3,6 @@ $MENTAL_TAMA=100
 
 $STATE_OF_LIFE=["oeuf","bebe","enfant","adulte","age","mort"]
 
-$MOOD=["heureux","joyeux","malade","melancolique","depressif","agonisant","reveur"]
+$MOOD=["heureux","joyeux","malade","neutre","melancolique","depressif","agonisant","reveur"]
 
-$TIME_OF_LIFE=16
+$TIME_OF_LIFE=160

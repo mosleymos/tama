@@ -8,6 +8,13 @@ require "chronic"
 include Display
 include PlayerActions
 
+BEGIN{
+    puts"Lancement du programme  #{$0}"
+    puts"Programme se terminera #{$TIME_OF_LIFE} secondes"
+}
+
+
+
 ban=banner_tama
 puts ban
 puts "Bienvenue dans l'application tama "
@@ -33,7 +40,7 @@ time_to_live = $TIME_OF_LIFE
 
 real_time=Chronic.parse("now")
 time_to_die=real_time
-time_to_die=Chronic.parse("120 seconds from now")
+time_to_die=Chronic.parse("#{$TIME_OF_LIFE} seconds from now")
 
 #binding.pry
 
@@ -58,29 +65,13 @@ choice_player.to_i
 #binding.pry
 
 playerChoice_act_tama(tama,choice_player)
-=begin
-    if choice_player=="0"
-	puts "vous nourrissz tama"
-	tama.feed_tama
-    elsif choice_player=="1"
-	puts "vous eduquez tama"
-	tama.teach_tama
-    elsif choice_player=="2"
-	puts "Vous jouez avec tama"
-	tama.play_with_tama
-    elsif choice_player=="3"
-	puts"vous soignez tama"
-	tama.cure_tama
-    elsif choice_player=="4"
-	puts "vous nettoyez tama"
-    else
-	puts"je  ne vous comprend pas"
-    end
-=end
 
 sleep 2.5
 
 end
 
-
+END{
+    puts "Fin du programme #{$0}"
+    puts "Le tamagotchi est mort"
+}
 
