@@ -28,13 +28,9 @@ module Display
 	
     end
 
-    def banner_tama_simple
-	puts"***"
-    end
-
     def banner_tama
-	puts "******************************"
-	puts "******************************"
+	15.times{print"-"}
+	print'\n'
     end
 
     def entree_utilisateur
