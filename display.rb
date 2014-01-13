@@ -55,4 +55,10 @@ module Display
 
 	
     end
+
+    def clear
+#	puts"\e[H\e[2J"
+#	system("cls")
+	system("clear")
+    end
 end
