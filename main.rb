@@ -7,6 +7,7 @@ require "chronic"
 #Ecrand de bienvenue 
 include Display
 include PlayerActions
+include EventTama
 
 BEGIN{
     puts"Lancement du programme  #{$0}"
@@ -68,6 +69,10 @@ playerChoice_act_tama(tama,choice_player)
 
 sleep 2.5
 
+#Alea de la vie 
+aleaNature=natureEventSpecific(natureRandom)
+
+clear
 end
 
 END{
