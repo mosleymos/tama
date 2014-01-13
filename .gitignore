@@ -20,3 +20,5 @@
 *.main.rb.swp
 *.constant.rb.swp
 *.tama.rb.swp
+*.config/.routes.rb.swp
+*.README.md.swp
