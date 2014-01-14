@@ -13,18 +13,12 @@ module Display
     end
    
     describe "#banner_tama" do
-	it "prints two line of ************* on terminal"do
-	    expect("+++++++")
-	    expect("///////")
+	it "prints one line of 15 --- on terminal"do
+	    15.times{expect(:print)=="+-"}
+	    expect(:puts)=="\n"
 
 	end
 
-    end
-
-    describe "#banner_tama_simple"do 
-	it "prints one line of **************** to terminal screen " do
-	    expect("***")
-	end
     end
 
     describe "#tama_actions" do 

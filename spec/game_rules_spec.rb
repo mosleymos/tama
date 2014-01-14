@@ -10,19 +10,16 @@ end
 
 module EventTama
 
-    describe "#NatureRandom" do 
-	it "Create a random variable in order to use for a specific event." 
-	it " Variable is between 1...10" do
-	    should_have eventRandom eq(rand(1..10).to_i)
-	    and_return(eventRandom)
+    describe "#natureRandom" do 
+	it "Create a random variable in order to use for a specific event." do
+	expect(:eventRandom) == (rand(1..10).to_i)
 	end
     end
 
-    describe "#NatureEventSpecific" do 
+    describe "#natureEventSpecific" do 
 	it "with the eventRandom variable choose a event in an existent array that equals the
 	variable" do
-	    should_receive eventRandom
-
+	 expect(:puts)=="Votre tama est:"   
 	end 
 
     end
