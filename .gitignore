@@ -24,4 +24,4 @@
 *.README.md.swp
 *.game_rules.rb.swp
 *.spec/.display.rb.swp
-
+*.spec/.display_spec.rb.swp
