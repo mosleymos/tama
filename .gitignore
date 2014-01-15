@@ -22,3 +22,4 @@
 *.tama.rb.swp
 *.config/.routes.rb.swp
 *.README.md.swp
+*.game_window.rb.swp
