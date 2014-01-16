@@ -47,7 +47,12 @@ Le probleme désormais est de faire l'application de manière graphique du moins
 Il faudra créer un mockup et tacher de s'y conformer
 
 
+DANS LE CADRE DE CE PROJET LA RDOC DE GOSU EST INDISPENSABLE. Il y a peu d'exemple concret efficace.
 
+Les polices sont en TTF et penser a en trouver d'autres.
+
+L'exemple pour le moment de reference pour moi est:
+ pour le github spooner/wrath
 
 
 
