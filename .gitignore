@@ -23,3 +23,6 @@
 *.config/.routes.rb.swp
 *.README.md.swp
 *.game_window.rb.swp
+*.Gemfile.swp
+*.README.md.swp
+*.config/.routes.rb.swp
