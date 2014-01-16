@@ -30,3 +30,4 @@
 *.Gemfile.lock.swp
 *.gitignore.swp
 *Gemfile.lock
+*spec/.display_spec.rb.swp
