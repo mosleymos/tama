@@ -1,6 +1,8 @@
 require "gosu"
+require "texplay"
 load "tama.rb"
-
+load "display.rb"
+load "game_rules.rb"
 
 class GameWindow < Gosu::Window
     def initialize
@@ -21,4 +23,5 @@ end
 
 window=GameWindow.new
 window.show
-
+text=Gosu::Fonti.new
+text=draw("#{banner_tama}",10,10,10,1,1,0xffffffff,:default) 
