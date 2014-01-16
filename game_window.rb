@@ -9,6 +9,8 @@ class GameWindow < Gosu::Window
 	super 300,300,false
 	self.caption="Tama Test"
 	@background_image=Gosu::Image.new(self,"background.png",true)
+	@presentation=Gosu::Font.new(self,"./04B_03__.TTF",10)
+
     end
 
     def update
@@ -17,11 +19,18 @@ class GameWindow < Gosu::Window
 
     def draw
 	@background_image.draw(0,0,0)
+	@presentation.draw("Bonjour",10,10,10,1,1,0xffffffff,:default)
+
     end
 
 end
 
 window=GameWindow.new
 window.show
-text=Gosu::Fonti.new
-text=draw("#{banner_tama}",10,10,10,1,1,0xffffffff,:default) 
+#window.paint{
+#    circle 20,20,10, :color => :red
+#}
+
+
+#text=Gosu::Fonti.new
+#text=draw("Bon",10,10,10,1,1,0xffffffff,:default) 
