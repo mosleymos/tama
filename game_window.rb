@@ -10,6 +10,9 @@ class GameWindow < Gosu::Window
 	self.caption="Tama Test"
 	@background_image=Gosu::Image.new(self,"background.png",true)
 	@presentation=Gosu::Font.new(self,"./04B_03__.TTF",10)
+#Instruction pour initialisation du son a voir pour plus tard
+#	@son=Gosu::Sound.new(self,"./note_2.ogg")
+#	@text=Gosu::Text_input.new
 
     end
 
@@ -20,6 +23,7 @@ class GameWindow < Gosu::Window
     def draw
 	@background_image.draw(0,0,0)
 	@presentation.draw("Bonjour",10,10,10,1,1,0xffffffff,:default)
+#	@son.play(false)
 
     end
 
