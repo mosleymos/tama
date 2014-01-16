@@ -31,12 +31,20 @@ ruby -r  pry main.rb
 
 ```
 
+NB au cours de mes recherches de nombreuses notes ont été prises en compte, il s'agira de travailler
+dessus pour plus tard. <br>
+
+Blog interressant a lire 
+
+=ttp://banisterfiend.wordpress.com/
+
+Existence de gem pry avancées: pry-nav, pry-remote
+
+A voir pour plus tard 
 
 
-
-
-
-
+Le probleme désormais est de faire l'application de manière graphique du moins dans le fonctionnement.<br>
+Il faudra créer un mockup et tacher de s'y conformer
 
 
 
