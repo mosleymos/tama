@@ -26,3 +26,5 @@
 *.Gemfile.swp
 *.README.md.swp
 *.config/.routes.rb.swp
+*.Gemfile.lock
+*.Gemfile.lock.swp
