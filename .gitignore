@@ -28,3 +28,5 @@
 *.config/.routes.rb.swp
 *.Gemfile.lock
 *.Gemfile.lock.swp
+*.gitignore.swp
+*Gemfile.lock
