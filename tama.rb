@@ -2,13 +2,18 @@ load "constant.rb"
 require "date"
 require "chronic"
 
+#Class Tama is the main object of our application<br>
+#Tama is a tamagotchi. <br>
+#A tamagotchi is a virtual pet which you can interact<br>
+
 class Tama
 
 
 attr_accessor :name
 attr_reader :health, :mental_state, :Date_of_Birth, :state, :mood
 
-#Constructeur principal
+#Main builder of the application it create our tama<br>
+#object
     def initialize(nom)
 	@name=nom
 	@Date_of_Birth=Chronic.parse("now")
@@ -19,22 +24,25 @@ attr_reader :health, :mental_state, :Date_of_Birth, :state, :mood
 
     end
 
-#Nourrir le tama
+#Function in order to feed our tama
     def feed_tama
 	@health += 30
     end 
 
-#Eduquer le tama
+#function in order to teach something
+#to our tama
     def teach_tama
 	@mental_state +=10
     end 
 
-#Jouer avec le tama    
+#You can play vwith your tama.<br>
+#it will change in a good way is <br>
+#ental state<br>
     def play_with_tama
 	@mental_state +=50
     end 
 
-#Soigner le tama
+#Cure our tama
     def cure_tama
 	@mental_state +=50
     end 
