@@ -12,19 +12,25 @@ class GameWindow < Gosu::Window
 	@presentation=Gosu::Font.new(self,"./04B_03__.TTF",10)
 #Instruction pour initialisation du son a voir pour plus tard
 #	@son=Gosu::Sound.new(self,"./note_2.ogg")
-#	@text=Gosu::Text_input.new
+	@text=Gosu::TextInput.new
 
     end
 
     def update
-
+    
     end
 
     def draw
 	@background_image.draw(0,0,0)
-	@presentation.draw("Bonjour",10,10,10,1,1,0xffffffff,:default)
-#	@son.play(false)
 
+	@presentation.draw("Bonjour",10,10,10,10,1,0xffffffff,:default)
+#	@son.play(false)
+    end
+
+    def button_down id
+	if id==Gosu::KbEscape
+	    close
+	end
     end
 
 end
