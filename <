@@ -1,7 +1,7 @@
 require "chronic"
-require_relative "tama_window"
+require "gosu"
 
-class Tama 
+class Tama < Gosu::Window
 #It's the main tama class it's create a tama which we can play
 
 
@@ -22,6 +22,11 @@ attr_reader :health, :mental_state, :Date_of_Birth, :state, :mood
 	@mental_state=MENTAL_TAMA
 	@state=STATE_OF_LIFE[0]
 	@mood=MOOD[0]
+
+#Initialisation of the main game window
+
+	self.caption="Tama Test"
+	@background_image=Gosu::Image.new(self,"background.png",true)
 	
     end
 
@@ -51,7 +56,11 @@ attr_reader :health, :mental_state, :Date_of_Birth, :state, :mood
 	@health +=50
     end
 
-    
+    def tama_life
+	#First display welcome to tama app during 3seconds
+	#Second display a tama and ask user which action
+	# he wants to do 
+    end
+
+
 end 
-
-
