@@ -22,3 +22,6 @@
 *.tama.rb.swp
 *.config/.routes.rb.swp
 *.README.md.swp
+
+#ignore swp
+**.swp
