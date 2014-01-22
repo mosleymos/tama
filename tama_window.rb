@@ -1,47 +1,44 @@
+#!/usr/bin/env ruby
+
 require 'gosu'
+require 'chingu'
+#require_relative File.expand_path('lib/tama.rb')
+#require File.expand_path('lib/tama.rb',__FILE__)
+load 'lib/tama.rb'
+load 'lib/playerTama.rb'
 
-class TamaWindow <Gosu::Window
+class TamaWindow < Gosu::Window
 
-MAIN=0
 
+#Main builder of the tama game window
     def initialize
-
-	#Initialisation of the main game window
-	@tamaGame=Gosu::Window.new(300,300,false)
-	@tamaGame.caption="TamaGame"	
-i#	@background_image=Gosu::Image.new(self,"background.png",true)
-#	@presentation=Gosu::Font.new(self,"./04B_03__.TTF",10)
-#
-
-    end
-
-    def tama_life
-	#First display welcome to tama app during 3seconds
-	
-
-	#Second display a tama and ask user which action
-	# he wants to do
-
-
-	###Third actions are make by the player until the 
-	#tama life ==0 
-    end
-    
-    def draw
-	@background_image.draw(0,0,0)
-    end
-
-    def show
+	super 300,300,false
+	self.caption="Tama Test"
+	@background_image=Gosu::Image.new(self,"./media/background.png",true)
+	@presentation=Gosu::Font.new(self,"./media/04B_03__.TTF",10)
 
     end
 
     def update
+    
+    end
+
+    def draw
+	@background_image.draw(0,0,0)
+	@presentation.draw("Bienvenue dans tama application",10,10,1,1,1,0xffffffff,:default)
+	@presentation.draw("essai oon",10,10,1,1,1,0xffffffff,:default)
 
     end
 
+=begin
+    def button_down id
+	if id==Gosu::KbEscape || id==Gosu::KbQ
+	    close
+	end
+    end
+=end
+
 end
 
-tamaGame=TamaWindow.new
-e=Gosu::Image.new(tamaGame,"background.png",true)
-#
-tamaGame.show
+window=TamaWindow.new
+window.show
