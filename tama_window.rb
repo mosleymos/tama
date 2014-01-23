@@ -16,6 +16,7 @@ class TamaWindow < Gosu::Window
 	self.caption="Tama Test"
 	@background_image=Gosu::Image.new(self,"./media/background.png",true)
 	@presentation=Gosu::Font.new(self,"./media/04B_03__.TTF",10)
+	@playerAction=PlayerTama.new
 
     end
 
@@ -26,17 +27,15 @@ class TamaWindow < Gosu::Window
     def draw
 	@background_image.draw(0,0,0)
 	@presentation.draw("Bienvenue dans tama application",10,10,1,1,1,0xffffffff,:default)
-	@presentation.draw("essai oon",10,10,1,1,1,0xffffffff,:default)
+#	@presentation.draw("essai oon",10,10,1,1,1,0xffffffff,:default)
 
     end
 
-=begin
     def button_down id
 	if id==Gosu::KbEscape || id==Gosu::KbQ
 	    close
 	end
     end
-=end
 
 end
 
