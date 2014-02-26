@@ -1,10 +1,15 @@
 require "tama/version"
 require "tama/animal_class"
 require "tama/player_class"
-  # Your code goes here...
+
+# encoding: utf-8
+
 module Tama
 
-class VirtualAnimal
+#Classe principale qui sert de main pour
+#l'executable et d'interface pour la librairie
+# Des corrections sont a faire
+class VirtualAnimal<Tama::Animal
 
     def initialize
         a = Animal.new()
