@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Tama::VERSION
   spec.authors       = ["Mori"]
   spec.email         = ["keitamori@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Tama est un projet de tamagotchi en version informatique.}
+  spec.description   = %q{Simulation de comportement animal en informatique.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -20,4 +20,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.5"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "chronic"
+  spec.add_development_dependency "highline"
 end
