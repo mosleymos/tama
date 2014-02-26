@@ -29,3 +29,35 @@ Tama est une clone du tamagotchi cree par Bandai mais en amélioré.
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+
+Variables du TAMA a intégrer
+
+```
+module Tama
+        #Constantes principales du jeu
+        $TAMA_LIFETIME=8
+        $TAMA_HEALTH=100
+        $TAMA_MENTAL=100
+        
+        #Largeur de cadre dans le cadre d'une
+        #implementation graphique
+        $HEIGHT=300
+        $WIDTH=300
+        
+        #Etats de vie
+        $LIFE_STATUS=["oeuf","enfant","adulte","age","mort"]
+        $MENTAL_STATUS=["neutre","joyeux","depressif","triste"]
+        $HEALTH_STATUS=["bonne sante","malade","souffrant","agonisant","neutre"]
+
+end
+```
+
+Nb pour le lancement d'un nouvel animal dans le pry executer:
+```
+$ rake install
+$ pry
+>>require 'tama'
+>>tama = Tama::VirtualAnimal.new()
+
+```
