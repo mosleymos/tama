@@ -8,5 +8,7 @@ namespace :mori do
     desc "Gestion de la documentation"
     task :doc do 
        `rdoc`
+       `echo -e '\n'`
+       puts "Generation de la documentation faite Mori"
     end
 end
