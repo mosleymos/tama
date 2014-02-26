@@ -1,15 +1,16 @@
 require "tama/version"
-require "tama/constant"
 require "tama/animal_class"
-
-module Tama
+require "tama/player_class"
   # Your code goes here...
-  class VirtualAnimal<Animal
+module Tama
+
+class VirtualAnimal
+
     def initialize
+        a = Animal.new()
     end
 
     def main
-
     end
-  end
+end
 end
