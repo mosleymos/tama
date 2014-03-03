@@ -9,6 +9,11 @@ module Tama
 
     $TIME_OF_LIFE=3600
 
+#Constante par défaut de la vie du tama sante et mental
+    
+    $TAMA_HEALTH=100
+    $TAMA_MENTAL=100
+
 # Tableau qui determine les etats de vie du tamagotchi
     
     $STATE_OF_LIFE=["Oeuf","bebe","enfant","adulte","age","mort"]
