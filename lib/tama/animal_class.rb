@@ -1,11 +1,16 @@
 # encoding: utf-8
 module Tama
+require 'chronic'
+require_relative 'constant'
+
     #Classe animal dont herite Virtualanimal.
     #Elle contient toutes la base du tamagotchi
         class Animal
             @@nbreAnimal=0 #Un player ne devra pas avoir plus d'un tama
-            @health=0
-            @mental=0
+            attr_reader :health
+            attr_reader :mental
+            attr_reader :DateBirth
+            attr_reader :Date_of_death
 
             #Construteur principal
             def initialize
@@ -13,6 +18,8 @@ module Tama
                 @mental=100
                 @@nbreAnimal+=1
                 puts "Creation de l'animal \n"
+                @DateBirth=Chronic.parse("now")
+                @Date_of_death=Chronic.parse("#{$TIME_OF_LIFE} minutes from now")
             end
 
             #Fonction manger du tama 
@@ -39,6 +46,16 @@ module Tama
                 puts"Vous nettoyez votre animal \n"
                 return 4
             end
+
+            #Fonction qui gerera la vie de l'objet tama
+            def lifeManagement
+
+            end
+
+            def DieOfTama
+                ObjectSpace.garbage_collect
+            end
+
             
         end
     end
