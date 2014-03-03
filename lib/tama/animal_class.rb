@@ -14,8 +14,8 @@ require_relative 'constant'
 
             #Construteur principal
             def initialize
-                @health=100
-                @mental=100
+                @health=$TAMA_HEALTH
+                @mental=$TAMA_MENTAL
                 @@nbreAnimal+=1
                 puts "Creation de l'animal \n"
                 @DateBirth=Chronic.parse("now")
@@ -23,34 +23,52 @@ require_relative 'constant'
             end
 
             #Fonction manger du tama 
-            def feed(health, mental)
+            def feed
                 puts"Votre animal se nourrit \n"
+                @health += 30
                 return 1
             end
 
             #Fonction enseigner du tama
-            def teach(health, mental)
+            def teach
                 puts"Votre animal apprend quelque chose \n"
+                @mental += 10
                 return 2
             end
 
             #Fonction soigner du tama
-            def cure(health, mental)
+            def cure
                 puts"Vous soignez votre animal \n"
+                @mental +=30
+                @health +=60
                 return 3
             end
 
             #Fonction nettoyer le tama - le faire prendre
             #un bain
-            def clean(health, mental)
+            def clean
                 puts"Vous nettoyez votre animal \n"
+                @mental +=10
+                @health +=30
                 return 4
             end
 
-            #Fonction qui gerera la vie de l'objet tama
-            def lifeManagement
+            #Fonction qui permet de savoir 
+            #si le tama est vivant ou mort
 
+            def isAlive?
+                time_to_die=@Date_of_death
+                actual_time=Chronic.parse("now")
+                    if actual_time > time_to_die 
+                        puts "Votre tama est mort"
+                        return false
+                    else
+                        puts "Votre tama est vivant"
+                        return true
+                    end
             end
+
+
 
             def DieOfTama
                 ObjectSpace.garbage_collect
