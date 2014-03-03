@@ -6,7 +6,8 @@ module Tama
             @name=""
             @time_playing=0
 
-            def initialize
+            def initialize(name)
+                @name= name 
             end
         end
     end
