@@ -7,7 +7,12 @@ module Tama
             @time_playing=0
 
             def initialize(name)
-                @name= name 
+                @name= name
+
+                #Offrir des possibilites
+                #au joueur a creuser
+                #Actions qu'il effectue
+                #sur le tama a faire
             end
         end
     end
